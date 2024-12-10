@@ -14,7 +14,7 @@ entity Users : cuid, managed {
 entity Projects : cuid, managed {
     Title       : String(100) @mandatory;
     Description : String(500);
-    Owner       : Association to Users;
+    Owner       : Association to Users @assert.target;
 }
 
 entity Tasks : cuid, managed {
@@ -23,13 +23,13 @@ entity Tasks : cuid, managed {
     DueDate     : DateTime;
     Status      : Status default 'Pending';
     Priority    : Priority default 'Medium';
-    Project     : Association to Projects;
-    Assignee    : Association to Users;
+    Project     : Association to Projects @assert.target;
+    Assignee    : Association to Users @assert.target;
+    Tags        : Association to many Tags  @assert.target;
 }
 
 entity Comments : cuid, managed {
     Content   : String(500) @mandatory;
-    CreatedAt : DateTime    @default: current_timestamp;
     Task      : Association to Tasks;
     User      : Association to Users;
 }
