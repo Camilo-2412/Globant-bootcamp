@@ -1,0 +1,46 @@
+_schema-version: "3.3"  # Especifica la versión del esquema
+ID: todolist-app  # Identificador único de la aplicación
+version: 1.0.0  # Versión de la aplicación
+
+modules:
+  - name: todolist
+    type: nodejs
+    path: .
+    parameters:
+      memory: 256M
+    build-parameters:
+      builder: npm
+      npm-packages:
+        - @sap/cds
+        - @sap/xssec
+        - @sap/xsenv
+    provides:
+      - name: todolist-api
+        properties:
+          url: "~{url}"
+    requires:
+      - name: xsuaa
+        properties:
+          VCAP_SERVICES: ${VCAP_SERVICES}
+      - name: my-hana-db
+    target: nodejs
+
+resources:
+  - name: xsuaa
+    type: xsuaa
+    parameters:
+      service: xsuaa
+      plan: application
+      name: todolist-xsuaa
+      description: XSUAA service for Todolist app
+      security-configuration: xs-security.json
+
+  - name: my-hana-db
+    type: hana
+    parameters:
+      service: hana
+      plan: application
+      name: todolist-hana
+      description: HANA database for Todolist app
+      schema: TODOLIST_SCHEMA
+      db-namespace: "com.sap.todolist"

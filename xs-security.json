@@ -1,6 +1,35 @@
 {
-  "scopes": [],
-  "attributes": [],
-  "role-templates": [],
-  "authorities-inheritance": false
+  "xsappname": "my-xsuaa-service",
+  "tenant-mode": "shared",
+  "scopes": [
+    {
+      "name": "$XSAPPNAME.admin",
+      "description": "Admin Role",
+      "granted-roles": ["admin"]
+    },
+    {
+      "name": "$XSAPPNAME.manager",
+      "description": "Manager Role",
+      "granted-roles": ["manager"]
+    },
+    {
+      "name": "$XSAPPNAME.viewer",
+      "description": "Viewer Role",
+      "granted-roles": ["viewer"]
+    }
+  ],
+  "role-templates": [
+    {
+      "name": "admin",
+      "description": "Administrator Role"
+    },
+    {
+      "name": "manager",
+      "description": "Manager Role"
+    },
+    {
+      "name": "viewer",
+      "description": "Viewer Role"
+    }
+  ]
 }

@@ -25,18 +25,24 @@ entity Tasks : cuid, managed {
     Priority    : Priority default 'Medium';
     Project     : Association to Projects @assert.target;
     Assignee    : Association to Users @assert.target;
-    Tags        : Association to many Tags  @assert.target;
+    Tags        : Association to many Tags on Tags.ID = $self.Tags.ID;
 }
 
 entity Comments : cuid, managed {
     Content   : String(500) @mandatory;
-    Task      : Association to Tasks;
-    User      : Association to Users;
+    Task      : Association to Tasks @assert.target;
+    User      : Association to Users @assert.target;
 }
 
 entity Tags : cuid, managed {
     Name : String(100) @mandatory;
 }
+
+entity TaskTags : cuid {
+    Task_ID : Association to Tasks;
+    Tag_ID  : Association to Tags;
+}
+
 
 type Status   : String(200) enum {
     Pending;

@@ -6,4 +6,5 @@ service ToDoService {
     entity Tasks as projection on todo.Tasks;
     entity Comments as projection on todo.Comments;
     entity Tags as projection on todo.Tags;
+    entity TaskTags as projection on todo.TaskTags;
 }
