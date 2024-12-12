@@ -54,21 +54,21 @@ module.exports = (srv) => {
 
 
   // Marcar una tarea como completada
-  this.on('markTaskCompleted', async (req) => {
+  srv.on('markTaskCompleted', async (req) => {
     const { taskID } = req.data;
     const updatedTask = await UPDATE(Tasks, taskID).with({ Status: 'Completed' });
     return updatedTask;
   });
 
   // Obtener tareas de un proyecto específico
-  this.on('getProjectTasks', async (req) => {
+  srv.on('getProjectTasks', async (req) => {
     const { projectID } = req.data;
     const tasks = await SELECT.from(Tasks).where({ Project_ID: projectID });
     return tasks;
   });
 
     // Contar tareas por estado en un proyecto
-    this.on('countTasksByStatus', async (req) => {
+    srv.on('countTasksByStatus', async (req) => {
       const { projectID, status } = req.data;
       const count = await SELECT.one.from(Tasks).where({
         Project_ID: projectID,

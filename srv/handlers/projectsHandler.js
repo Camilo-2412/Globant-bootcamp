@@ -22,7 +22,7 @@ module.exports = (srv) => {
   });
 
   // Añadir un miembro a un proyecto
-  this.on("addProjectMember", async (req) => {
+  srv.on("addProjectMember", async (req) => {
     const { projectID, userID } = req.data;
     const newMember = await INSERT.into(ProjectMembers).entries({
       Project_ID: projectID,
