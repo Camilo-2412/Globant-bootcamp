@@ -1,7 +1,6 @@
 module.exports = (srv) => {
     const { Users } = srv.entities;
-
-    // Evento before CREATE para validar correos únicos
+    
     srv.before('CREATE', Users, async (req) => {
         const { Email } = req.data;
         const emailExists = await srv.run(SELECT.one.from(Users).where({ Email }));

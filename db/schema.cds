@@ -17,6 +17,11 @@ entity Projects : cuid, managed {
     Owner       : Association to Users @assert.target;
 }
 
+entity ProjectMembers : cuid {
+  Project_ID : Association to Projects @assert.target;
+  User_ID    : Association to Users @assert.target;
+}
+
 entity Tasks : cuid, managed {
     Title       : String(100) @mandatory;
     Description : String(500);
