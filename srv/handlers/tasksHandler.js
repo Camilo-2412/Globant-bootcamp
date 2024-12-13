@@ -52,28 +52,77 @@ module.exports = (srv) => {
     }
   });
 
-
   // Marcar una tarea como completada
-  srv.on('markTaskCompleted', async (req) => {
+  srv.on("markTaskCompleted", async (req) => {
     const { taskID } = req.data;
-    const updatedTask = await UPDATE(Tasks, taskID).with({ Status: 'Completed' });
+    console.log(!taskID || !taskID.ID);
+
+    // Asegúrate de que taskID es un objeto con la propiedad ID
+    if (!taskID) {
+      throw new Error("Invalid task ID.");
+    }
+
+    await UPDATE(Tasks).set({ Status: "Completed" }).where({ ID: taskID });
+
+    // Recuperar el registro actualizado
+    const updatedTask = await SELECT.one.from(Tasks).where({ ID: taskID });
+
+    // Retornar el registro actualizado
     return updatedTask;
   });
 
   // Obtener tareas de un proyecto específico
-  srv.on('getProjectTasks', async (req) => {
+  srv.on("getProjectTasks", async (req) => {
     const { projectID } = req.data;
     const tasks = await SELECT.from(Tasks).where({ Project_ID: projectID });
     return tasks;
   });
 
-    // Contar tareas por estado en un proyecto
-    srv.on('countTasksByStatus', async (req) => {
-      const { projectID, status } = req.data;
-      const count = await SELECT.one.from(Tasks).where({
+  // Contar tareas por estado en un proyecto
+  srv.on("countTasksByStatus", async (req) => {
+    const { projectID, status } = req.data;
+    const count = await SELECT.one
+      .from(Tasks)
+      .where({
         Project_ID: projectID,
-        Status: status
-      }).columns('count(*) as count');
-      return count.count || 0; // Return 0 if no tasks match the criteria
-    });
+        Status: status,
+      })
+      .columns("count(*) as count");
+    return count.count || 0; // Return 0 if no tasks match the criteria
+  });
+
+  this.on("assignUserToTask", async (req) => {
+    const { taskID, userID } = req.data;
+
+    // Verificar si la tarea existe
+    const task = await SELECT.one.from(Tasks).where({ ID: taskID });
+    if (!task) {
+      return req.error(404, `Task not found`);
+    }
+
+    // Verificar si el usuario existe
+    const user = await SELECT.one.from(Users).where({ ID: userID });
+    if (!user) {
+      return req.error(404, `User not found`);
+    }
+
+    // Verificar si el usuario es miembro del proyecto al que pertenece la tarea
+    const isMember = await SELECT.one
+      .from(ProjectMembers)
+      .where({ project_ID: task.project_ID, user_ID: userID });
+
+    if (!isMember) {
+      return req.error(403, `User is not a member of the project`);
+    }
+
+    // Asignar el usuario a la tarea
+    try {
+      const updatedTask = await UPDATE(Tasks, taskID).with({
+        assignee_ID: userID,
+      });
+      return updatedTask;
+    } catch (error) {
+      req.error(400, `Failed to assign user to task: ${error.message}`);
+    }
+  });
 };

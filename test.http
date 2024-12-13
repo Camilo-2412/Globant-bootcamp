@@ -1,0 +1,93 @@
+### Crear un usuario
+POST http://localhost:43705/odata/v4/to-do//Users
+Content-Type: application/json
+
+{
+  "Name": "John Doe",
+  "Email": "john.doe2@example.com",
+  "password": "securepassword123"
+}
+
+### Crear un proyecto
+POST http://localhost:39459/odata/v4/to-do/Projects
+Content-Type: application/json
+
+{
+  "title": "Proyecto Demo 2",
+  "description": "Este es un proyecto de prueba 2",
+  "owner": {
+    "ID": "1"
+  }
+}
+
+### Crear una tarea
+POST http://localhost:4004/todolist/Tasks
+Content-Type: application/json
+
+{
+  "Title": "Tarea 1",
+  "Description": "Esta es una tarea de prueba",
+  "DueDate": "2024-12-31T23:59:59Z",
+  "Status": "Pending",
+  "Priority": "Medium",
+  "Project_ID": "REEMPLAZAR_CON_PROJECT_ID",
+  "Assignee_ID": "REEMPLAZAR_CON_USER_ID"
+}
+
+### Leer todos los proyectos con el conteo de tareas
+GET http://localhost:43187/odata/v4/to-do/Projects
+Accept: application/json
+
+### Leer todas las tareas
+GET http://localhost:4004/todolist/Tasks
+Accept: application/json
+
+
+
+### Calcular tareas vencidas para un proyecto (Function)
+GET http://localhost:4004/todolist/Projects/getOverdueTasks?projectID=REEMPLAZAR_CON_PROJECT_ID
+Accept: application/json
+
+
+###
+POST http://localhost:45809/odata/v4/to-do/addProjectMember
+Content-Type: application/json
+
+{
+    "projectID": "2",
+    "userID": "2",
+    "role": "Admin" 
+}
+
+###
+POST http://localhost:43187/odata/v4/to-do/markTaskCompleted
+Content-Type: application/json
+
+{
+  "taskID": "3b163b39-02b3-4c5a-8c6a-e09eb8aefcdc"   
+}
+
+### Leer todos los proyectos con el conteo de tareas
+GET http://localhost:39459/odata/v4/to-do/ProjectMembers
+Accept: application/json
+
+### Leer todos los proyectos con el conteo de tareas
+GET http://localhost:33389/odata/v4/to-do/Projects(1ef44925-9b20-4ab9-a532-4f850f5d1a9e)/ProjectMembers
+Accept: application/json
+
+### Leer todos los proyectos con el conteo de tareas
+GET http://localhost:33389/odata/v4/to-do/Projects(1ef44925-9b20-4ab9-a532-4f850f5d1a9e)
+Accept: application/json
+
+
+###
+POST http://localhost:38187/odata/v4/to-do/Tasks
+Content-Type: application/json
+
+{
+    "project_ID": "1",
+    "title": "Task Title",
+    "description": "Task Description",
+    "status": "Pending",
+    "priority": "High"
+}

@@ -1,1 +1,4 @@
-ID,Project_ID_ID,User_ID_ID
+ID,project_ID,user_ID,role,createdAt,createdBy,modifiedAt,modifiedBy
+1,1,1,Admin,2023-10-01T00:00:00.000Z,admin,2023-10-01T00:00:00.000Z,admin
+2,1,2,Member,2023-10-01T00:00:00.000Z,admin,2023-10-01T00:00:00.000Z,admin
+3,2,1,Member,2023-10-02T00:00:00.000Z,admin,2023-10-02T00:00:00.000Z,admin
