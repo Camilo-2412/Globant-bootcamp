@@ -71,6 +71,22 @@ The application is deployed in BTP in the following [link](https://0297f4f6trial
 
 On the other hand the remote service that consumes the BusinessPartner API that is hosted in the same application runs without any problem, in the following URL `https://0297f4f6trial-dev-bootcamp-srv.cfapps.us10-001.hana.ondemand.com/odata/v4/my-bupa/Foo`, you can validate the requests using a file a file with a collection within the request project in postman where the entire project request is configured including this external request that does work, the file is `Bootcamp.postman_collection.json`, I do not know if it is some configuration or a db issue that does not allow to consume the own methods of my application but the external methods are executed normally.
 
+An error that may occur when executing a method is the following: 
+
+ `Acquiring client from pool timed out. Please review your system setup, transaction handling, and pool configuration. Pool State: borrowed: 0, pending: 0, size: 10, available: 0, max: 100" `
+
+ In several forums it is mentioned that this error occurs when the connection pool is not properly configured. They mention that one way to fix this is to configure the pool in the package.json as follows: 
+
+ `"db": {
+          "kind": "hana",
+          "pool": {
+            "max": 100,
+            "min": 10
+          }
+        }
+  `
+but it doesn't work, the same problem keeps occurring.
+
 ## Test local
 If you want to test the functionality of this project locally, several .csv files with raw data are provided in the `db/data` folder to simulate a db to test the methods. 
 Once you have downloaded or cloned this repo follow the next steps to test the app (preferably from BAS):
