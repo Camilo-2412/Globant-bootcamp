@@ -65,11 +65,6 @@ In the `db` folder are the models of the application `schema.cds` are the own mo
 In the `handlers` folder there is the separate logic for each of the entities, where filters, searches and other functionalities are developed.There are also the files that expose the services that in this case are `to-do-list-service.cds` and for the external service `remote.cds`, and the support files `to-do-list-service.j`s and `remote.js`.
 
 Finally, there are the property and configuration files that allow or facilitate the deployment to BTP, such as `mta.yaml` and `package.json`.
-## Next Steps
-
-- Open a new terminal and run `cds watch`
-- (in VS Code simply choose _**Terminal** > Run Task > cds watch_)
-- Start adding content, for example, a [db/schema.cds](db/schema.cds).
 
 ##Deploy
 The application is deployed in BTP in the following [link](https://0297f4f6trial-dev-bootcamp-srv.cfapps.us10-001.hana.ondemand.com) , there have been problems in the consumption of the service.
