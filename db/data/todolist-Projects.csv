@@ -1,3 +1,21 @@
 ID,title,description,owner_ID,createdAt,createdBy,modifiedAt,modifiedBy
-1,Project Alpha,Description for Project Alpha,1,2023-10-01T00:00:00.000Z,admin,2023-10-01T00:00:00.000Z,admin
-2,Project Beta,Description for Project Beta,2,2023-10-02T00:00:00.000Z,admin,2023-10-02T00:00:00.000Z,admin
+1,Project Alpha,Design and develop the main user interface for the project,1,2024-01-01 10:00:00,system,2024-01-01 10:00:00,system
+2,Project Beta,Build backend API for project integration,2,2024-01-15 12:00:00,system,2024-01-15 12:00:00,system
+3,Project Gamma,Implement database architecture,3,2024-02-01 14:00:00,system,2024-02-01 14:00:00,system
+4,Project Delta,Develop mobile app for the project,4,2024-03-01 09:00:00,system,2024-03-01 09:00:00,system
+5,Project Epsilon,Write documentation for the project,5,2024-03-10 11:30:00,system,2024-03-10 11:30:00,system
+6,Project Zeta,Design marketing materials,6,2024-04-01 10:00:00,system,2024-04-01 10:00:00,system
+7,Project Eta,Quality assurance and bug fixing,7,2024-04-15 11:00:00,system,2024-04-15 11:00:00,system
+8,Project Theta,Integrate with third-party services,8,2024-05-01 10:00:00,system,2024-05-01 10:00:00,system
+9,Project Iota,Prepare deployment pipelines,9,2024-05-10 12:00:00,system,2024-05-10 12:00:00,system
+10,Project Kappa,Conduct user testing for the new platform,10,2024-06-01 10:00:00,system,2024-06-01 10:00:00,system
+11,Project Lambda,Research and implement security features,11,2024-06-10 10:00:00,system,2024-06-10 10:00:00,system
+12,Project Mu,Optimize performance for scalability,12,2024-07-01 09:00:00,system,2024-07-01 09:00:00,system
+13,Project Nu,Design user feedback system,13,2024-07-15 10:00:00,system,2024-07-15 10:00:00,system
+14,Project Xi,Develop internal tools for project management,14,2024-08-01 12:00:00,system,2024-08-01 12:00:00,system
+15,Project Omicron,Launch marketing campaign for the platform,15,2024-08-15 14:00:00,system,2024-08-15 14:00:00,system
+16,Project Pi,Develop the project's dashboard interface,1,2024-09-01 10:00:00,system,2024-09-01 10:00:00,system
+17,Project Rho,Work on data analytics features,2,2024-09-15 11:00:00,system,2024-09-15 11:00:00,system
+18,Project Sigma,Setup environment for deployment automation,3,2024-10-01 10:00:00,system,2024-10-01 10:00:00,system
+19,Project Tau,Conduct code reviews and optimize codebase,4,2024-10-10 12:00:00,system,2024-10-10 12:00:00,system
+20,Project Upsilon,Setup database monitoring and alerts,5,2024-11-01 10:00:00,system,2024-11-01 10:00:00,system

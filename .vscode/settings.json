@@ -1,6 +1,6 @@
 {
     "mdk.platform": "iOS & Android & Web",
-    "wattFeature.hanaTools.useLocalConnection": true,
+    "wattFeature.hanaTools.useLocalConnection": false,
     "mdk.defaultEditor": "Text Editor",
     "workbench.editorAssociations": {
         "*.app": "default",

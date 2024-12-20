@@ -28,6 +28,7 @@ entity Users : cuid, managed {
     name     : String(100)  @mandatory;
     email    : String(100)  @mandatory  @assert.unique;
     password : String(100)  @mandatory;
+    BusinessPartnerID : String @mandatory;
 }
 
 // Definición de la entidad Proyectos

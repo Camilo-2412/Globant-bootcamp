@@ -1,16 +1,40 @@
+http://localhost:4004/odata/v4/to-do//Users
+# Base URL (actualiza si cambia)
+@baseUrl = http://localhost:4004/odata/v4/to-do/
+
+### Usuarios ###
+
 ### Crear un usuario
-POST http://localhost:43705/odata/v4/to-do//Users
-Content-Type: application/json
+POST {{baseUrl}}/Users
+Content-Type:application/json
 
 {
-  "Name": "John Doe",
-  "Email": "john.doe2@example.com",
-  "password": "securepassword123"
+  "name": "John Doe",
+  "email": "john.doe2@example.com",
+  "password": "password123",
+  "BusinessPartnerID": "1000000"
+}
+
+### Obtener todos los usuarios
+GET {{baseUrl}}/Users
+Accept:application/json
+
+### Obtener un usuario por ID
+GET {{baseUrl}}/Users('1')
+Accept:application/json
+
+### Actualizar un usuario
+PATCH {{baseUrl}}/Users('1')
+Content-Type:application/json
+
+{
+  "name": "John Updated",
+  "email": "updated.john@example.com"
 }
 
 ### Crear un proyecto
-POST http://localhost:39459/odata/v4/to-do/Projects
-Content-Type: application/json
+POST {{baseUrl}}/Projects
+Content-Type:application/json
 
 {
   "title": "Proyecto Demo 2",
@@ -20,74 +44,168 @@ Content-Type: application/json
   }
 }
 
-### Crear una tarea
-POST http://localhost:4004/todolist/Tasks
+### Obtener todos los proyectos
+GET {{baseUrl}}/Projects
+
+### Obtener un proyecto por ID
+GET {{baseUrl}}/Projects('1')
+
+### Actualizar un proyecto
+PATCH {{baseUrl}}/Projects('1')
+Content-Type:application/json
+
+{
+  "description": "Updated description"
+}
+
+
+### Miembros de Proyectos ###
+
+### Agregar un miembro a un proyecto
+POST {{baseUrl}}/ProjectMembers
 Content-Type: application/json
 
 {
-  "Title": "Tarea 1",
-  "Description": "Esta es una tarea de prueba",
-  "DueDate": "2024-12-31T23:59:59Z",
-  "Status": "Pending",
-  "Priority": "Medium",
-  "Project_ID": "REEMPLAZAR_CON_PROJECT_ID",
-  "Assignee_ID": "REEMPLAZAR_CON_USER_ID"
+  "project_ID": "1",
+  "user_ID": "1",
+  "role": "Member"
 }
 
-### Leer todos los proyectos con el conteo de tareas
-GET http://localhost:43187/odata/v4/to-do/Projects
-Accept: application/json
+### Obtener todos los miembros de proyectos
+GET {{baseUrl}}/ProjectMembers
+---
 
-### Leer todas las tareas
-GET http://localhost:4004/todolist/Tasks
-Accept: application/json
+### Tareas ###
 
+# Crear una tarea
+POST {{baseUrl}}/Tasks
+Content-Type:application/json
 
+{
+  "title": "Task 1",
+  "description": "This is the first task.",
+  "dueDate": "2024-12-31T23:59:59Z",
+  "project_ID": "1",
+  "assignee_ID": "1"
+}
 
-### Calcular tareas vencidas para un proyecto (Function)
-GET http://localhost:4004/todolist/Projects/getOverdueTasks?projectID=REEMPLAZAR_CON_PROJECT_ID
-Accept: application/json
+### Obtener todas las tareas
+GET {{baseUrl}}/Tasks
 
+### Obtener una tarea específica
+GET {{baseUrl}}/Tasks('1')
 
-###
-POST http://localhost:45809/odata/v4/to-do/addProjectMember
+### Actualizar una tarea
+PATCH {{baseUrl}}/Tasks('1')
 Content-Type: application/json
 
 {
-    "projectID": "2",
-    "userID": "2",
-    "role": "Admin" 
+  "status": "Completed"
 }
 
-###
-POST http://localhost:43187/odata/v4/to-do/markTaskCompleted
+### Eliminar una tarea
+DELETE {{baseUrl}}/Tasks('1')
+
+
+#Actions y Functions
+
+### Cambiar el estado de una tarea
+POST {{baseUrl}}/changeTaskStatus
 Content-Type: application/json
 
 {
-  "taskID": "3b163b39-02b3-4c5a-8c6a-e09eb8aefcdc"   
+  "taskID": "1",
+  "newStatus": "Completed"
 }
 
-### Leer todos los proyectos con el conteo de tareas
-GET http://localhost:39459/odata/v4/to-do/ProjectMembers
-Accept: application/json
+---
 
-### Leer todos los proyectos con el conteo de tareas
-GET http://localhost:33389/odata/v4/to-do/Projects(1ef44925-9b20-4ab9-a532-4f850f5d1a9e)/ProjectMembers
-Accept: application/json
+### Obtener tareas de un proyecto específico
+GET {{baseUrl}}/getProjectTasks(projectID='1')
+Accept:application/json
 
-### Leer todos los proyectos con el conteo de tareas
-GET http://localhost:33389/odata/v4/to-do/Projects(1ef44925-9b20-4ab9-a532-4f850f5d1a9e)
-Accept: application/json
+### Contar tareas por estado en un proyecto
+GET {{baseUrl}}/countTasksByStatus?projectID='1'&status='Pending'
+Accept:application/json
 
 
-###
-POST http://localhost:38187/odata/v4/to-do/Tasks
+### Agregar un miembro a un proyecto
+POST {{baseUrl}}/addProjectMember
 Content-Type: application/json
 
 {
-    "project_ID": "1",
-    "title": "Task Title",
-    "description": "Task Description",
-    "status": "Pending",
-    "priority": "High"
+  "projectID": "1",
+  "userID": "2",
+  "role": "Member"
 }
+
+
+### Asignar un usuario a una tarea
+POST {{baseUrl}}/assignUserToTask
+Content-Type: application/json
+
+{
+  "taskID": "1",
+  "userID": "2"
+}
+
+
+### Eliminar un miembro de un proyecto
+POST {{baseUrl}}/removeMemberFromProject
+Content-Type: application/json
+
+{
+  "projectID": "1",
+  "userID": "2"
+}
+
+
+### Obtener detalles de usuario por email
+POST {{baseUrl}}/fetchUserDetails
+Content-Type: application/json
+
+{
+  "email": "sophia.clark@example.com"
+}
+
+### actualizar dueDate
+POST {{baseUrl}}/updateTaskDueDate
+Content-Type: application/json
+
+{
+  "taskID": "1",
+  "newDueDate": "2024-12-25T10:00:00"
+}
+
+### agregar varios miembros a un proyecto
+POST {{baseUrl}}/addMultipleMembersToProject
+Content-Type: application/json
+
+{
+  "projectID": "1",
+  "userIDs": ["2", "3", "5", "6"],
+  "role": "Member"
+}
+
+
+### completar las tareas de un proyecto
+POST {{baseUrl}}/completeAllProjectTasks
+Content-Type: application/json
+
+{
+  "projectID": "1"
+}
+
+### Obtener las tareas con mas prioridad de un proyecto
+GET {{baseUrl}}/getTasksByPriority?projectID='1'&priority='High'
+Accept:application/json
+
+### Obtener los miembros de un proyecto con sus roles
+GET {{baseUrl}}/getProjectMembers?projectID='1'
+Accept:application/json
+
+
+### Calcular el progreso de un proyecto
+GET {{baseUrl}}/calculateProjectProgress?projectID='1'
+Accept:application/json
+

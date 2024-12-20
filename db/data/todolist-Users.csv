@@ -1,3 +1,17 @@
-ID,name,email,password,createdAt,createdBy,modifiedAt,modifiedBy
-1,John Doe,john.doe@example.com,hashedpassword1,2023-10-01T00:00:00.000Z,admin,2023-10-01T00:00:00.000Z,admin
-2,Jane Smith,jane.smith@example.com,hashedpassword2,2023-10-02T00:00:00.000Z,admin,2023-10-02T00:00:00.000Z,admin
+ID,name,email,password,BusinessPartnerID,createdAt,createdBy,modifiedAt,modifiedBy
+1,John Doe,john.doe@example.com,Password123,1000000,2024-01-01 10:00:00,system,2024-01-01 10:00:00,system
+2,Jane Smith,jane.smith@example.com,Password123,1000000,2024-01-02 11:00:00,system,2024-01-02 11:00:00,system
+3,Michael Johnson,michael.johnson@example.com,Password123,1000000,2024-01-03 12:00:00,system,2024-01-03 12:00:00,system
+4,Emily Davis,emily.davis@example.com,Password123,1000000,2024-02-01 10:00:00,system,2024-02-01 10:00:00,system
+5,Chris Brown,chris.brown@example.com,Password123,1000000,2024-02-02 11:00:00,system,2024-02-02 11:00:00,system
+6,Jessica Wilson,jessica.wilson@example.com,Password123,1000000,2024-03-01 10:00:00,system,2024-03-01 10:00:00,system
+7,Daniel Taylor,daniel.taylor@example.com,Password123,1000000,2024-03-02 11:00:00,system,2024-03-02 11:00:00,system
+8,Olivia Martinez,olivia.martinez@example.com,Password123,1000000,2024-04-01 10:00:00,system,2024-04-01 10:00:00,system
+9,David Lee,david.lee@example.com,Password123,1000000,2024-04-02 11:00:00,system,2024-04-02 11:00:00,system
+10,Sophia Clark,sophia.clark@example.com,Password123,1000000,2024-05-01 10:00:00,system,2024-05-01 10:00:00,system
+11,Liam White,liam.white@example.com,Password123,1000000,2024-05-02 11:00:00,system,2024-05-02 11:00:00,system
+12,Ava Lewis,ava.lewis@example.com,Password123,1000000,2024-06-01 10:00:00,system,2024-06-01 10:00:00,system
+13,James King,james.king@example.com,Password123,1000000,2024-06-02 11:00:00,system,2024-06-02 11:00:00,system
+14,Mia Harris,mia.harris@example.com,Password123,1000000,2024-07-01 10:00:00,system,2024-07-01 10:00:00,system
+15,Lucas Scott,lucas.scott@example.com,Password123,1000000,2024-07-02 11:00:00,system,2024-07-02 11:00:00,system
+

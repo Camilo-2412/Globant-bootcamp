@@ -1,0 +1,1699 @@
+{
+	"info": {
+		"_postman_id": "d9abe2c6-f996-42d6-9901-11da47418b54",
+		"name": "Bootcamp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "8745928",
+		"_collection_link": "https://cloudy-satellite-982747.postman.co/workspace/Future-World~1c04cd76-d07d-41db-9d34-013f06bbfe4b/collection/8745928-d9abe2c6-f996-42d6-9901-11da47418b54?action=share&source=collection_link&creator=8745928"
+	},
+	"item": [
+		{
+			"name": "Foo",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessTokenUrl",
+							"value": "https://0297f4f6trial.authentication.us10.hana.ondemand.com/oauth/token",
+							"type": "string"
+						},
+						{
+							"key": "tokenRequestParams",
+							"value": [
+								{
+									"key": "",
+									"value": "",
+									"enabled": false,
+									"send_as": "request_body"
+								}
+							],
+							"type": "any"
+						},
+						{
+							"key": "client_authentication",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "tokenName",
+							"value": "SAP CAP",
+							"type": "string"
+						},
+						{
+							"key": "clientSecret",
+							"value": "a2148e9d-de44-465b-8f26-1b220f1c9ab5$wY8uhbFsxdBGAMp_bn4VoBBhegM0onD-paBMVoImwMA=",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "sb-bootcamp-0297f4f6trial-dev!t370357",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://0297f4f6trial-dev-bootcamp-srv.cfapps.us10-001.hana.ondemand.com/odata/v4/my-bupa/Foo",
+					"protocol": "https",
+					"host": [
+						"0297f4f6trial-dev-bootcamp-srv",
+						"cfapps",
+						"us10-001",
+						"hana",
+						"ondemand",
+						"com"
+					],
+					"path": [
+						"odata",
+						"v4",
+						"my-bupa",
+						"Foo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetUsers",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessTokenUrl",
+							"value": "https://0297f4f6trial.authentication.us10.hana.ondemand.com/oauth/token",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "string"
+						},
+						{
+							"key": "tokenRequestParams",
+							"value": [
+								{
+									"key": "",
+									"value": "",
+									"enabled": false,
+									"send_as": "request_body"
+								}
+							],
+							"type": "any"
+						},
+						{
+							"key": "client_authentication",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "tokenName",
+							"value": "SAP CAP",
+							"type": "string"
+						},
+						{
+							"key": "clientSecret",
+							"value": "a2148e9d-de44-465b-8f26-1b220f1c9ab5$wY8uhbFsxdBGAMp_bn4VoBBhegM0onD-paBMVoImwMA=",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "sb-bootcamp-0297f4f6trial-dev!t370357",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://0297f4f6trial-dev-bootcamp-srv.cfapps.us10-001.hana.ondemand.com/odata/v4/to-do/Users",
+					"protocol": "https",
+					"host": [
+						"0297f4f6trial-dev-bootcamp-srv",
+						"cfapps",
+						"us10-001",
+						"hana",
+						"ondemand",
+						"com"
+					],
+					"path": [
+						"odata",
+						"v4",
+						"to-do",
+						"Users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateUser",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessTokenUrl",
+							"value": "https://0297f4f6trial.authentication.us10.hana.ondemand.com/oauth/token",
+							"type": "string"
+						},
+						{
+							"key": "tokenRequestParams",
+							"value": [
+								{
+									"key": "",
+									"value": "",
+									"enabled": false,
+									"send_as": "request_body"
+								}
+							],
+							"type": "any"
+						},
+						{
+							"key": "client_authentication",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "tokenName",
+							"value": "SAP CAP",
+							"type": "string"
+						},
+						{
+							"key": "clientSecret",
+							"value": "a2148e9d-de44-465b-8f26-1b220f1c9ab5$wY8uhbFsxdBGAMp_bn4VoBBhegM0onD-paBMVoImwMA=",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "sb-bootcamp-0297f4f6trial-dev!t370357",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"John Doe\",\r\n  \"email\": \"john.doe2@example.com\",\r\n  \"password\": \"password123\",\r\n  \"BusinessPartnerID\": \"1000000\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://0297f4f6trial-dev-bootcamp-srv.cfapps.us10-001.hana.ondemand.com/odata/v4/to-do/Users",
+					"protocol": "https",
+					"host": [
+						"0297f4f6trial-dev-bootcamp-srv",
+						"cfapps",
+						"us10-001",
+						"hana",
+						"ondemand",
+						"com"
+					],
+					"path": [
+						"odata",
+						"v4",
+						"to-do",
+						"Users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateUser",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessTokenUrl",
+							"value": "https://0297f4f6trial.authentication.us10.hana.ondemand.com/oauth/token",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "string"
+						},
+						{
+							"key": "tokenRequestParams",
+							"value": [
+								{
+									"key": "",
+									"value": "",
+									"enabled": false,
+									"send_as": "request_body"
+								}
+							],
+							"type": "any"
+						},
+						{
+							"key": "client_authentication",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "tokenName",
+							"value": "SAP CAP",
+							"type": "string"
+						},
+						{
+							"key": "clientSecret",
+							"value": "a2148e9d-de44-465b-8f26-1b220f1c9ab5$wY8uhbFsxdBGAMp_bn4VoBBhegM0onD-paBMVoImwMA=",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "sb-bootcamp-0297f4f6trial-dev!t370357",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "https://0297f4f6trial-dev-bootcamp-srv.cfapps.us10-001.hana.ondemand.com/odata/v4/to-do/Users('1')",
+					"protocol": "https",
+					"host": [
+						"0297f4f6trial-dev-bootcamp-srv",
+						"cfapps",
+						"us10-001",
+						"hana",
+						"ondemand",
+						"com"
+					],
+					"path": [
+						"odata",
+						"v4",
+						"to-do",
+						"Users('1')"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateProject",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessTokenUrl",
+							"value": "https://0297f4f6trial.authentication.us10.hana.ondemand.com/oauth/token",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "string"
+						},
+						{
+							"key": "tokenRequestParams",
+							"value": [
+								{
+									"key": "",
+									"value": "",
+									"enabled": false,
+									"send_as": "request_body"
+								}
+							],
+							"type": "any"
+						},
+						{
+							"key": "client_authentication",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "tokenName",
+							"value": "SAP CAP",
+							"type": "string"
+						},
+						{
+							"key": "clientSecret",
+							"value": "a2148e9d-de44-465b-8f26-1b220f1c9ab5$wY8uhbFsxdBGAMp_bn4VoBBhegM0onD-paBMVoImwMA=",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "sb-bootcamp-0297f4f6trial-dev!t370357",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Proyecto Demo 2\",\r\n    \"description\": \"Este es un proyecto de prueba 2\",\r\n    \"owner\": {\r\n        \"ID\": \"1\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://0297f4f6trial-dev-bootcamp-srv.cfapps.us10-001.hana.ondemand.com/odata/v4/to-do/Projects",
+					"protocol": "https",
+					"host": [
+						"0297f4f6trial-dev-bootcamp-srv",
+						"cfapps",
+						"us10-001",
+						"hana",
+						"ondemand",
+						"com"
+					],
+					"path": [
+						"odata",
+						"v4",
+						"to-do",
+						"Projects"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetProjects",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessTokenUrl",
+							"value": "https://0297f4f6trial.authentication.us10.hana.ondemand.com/oauth/token",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "string"
+						},
+						{
+							"key": "tokenRequestParams",
+							"value": [
+								{
+									"key": "",
+									"value": "",
+									"enabled": false,
+									"send_as": "request_body"
+								}
+							],
+							"type": "any"
+						},
+						{
+							"key": "client_authentication",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "tokenName",
+							"value": "SAP CAP",
+							"type": "string"
+						},
+						{
+							"key": "clientSecret",
+							"value": "a2148e9d-de44-465b-8f26-1b220f1c9ab5$wY8uhbFsxdBGAMp_bn4VoBBhegM0onD-paBMVoImwMA=",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "sb-bootcamp-0297f4f6trial-dev!t370357",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://0297f4f6trial-dev-bootcamp-srv.cfapps.us10-001.hana.ondemand.com/odata/v4/to-do/Projects",
+					"protocol": "https",
+					"host": [
+						"0297f4f6trial-dev-bootcamp-srv",
+						"cfapps",
+						"us10-001",
+						"hana",
+						"ondemand",
+						"com"
+					],
+					"path": [
+						"odata",
+						"v4",
+						"to-do",
+						"Projects"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateTask",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessTokenUrl",
+							"value": "https://0297f4f6trial.authentication.us10.hana.ondemand.com/oauth/token",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "string"
+						},
+						{
+							"key": "tokenRequestParams",
+							"value": [
+								{
+									"key": "",
+									"value": "",
+									"enabled": false,
+									"send_as": "request_body"
+								}
+							],
+							"type": "any"
+						},
+						{
+							"key": "client_authentication",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "tokenName",
+							"value": "SAP CAP",
+							"type": "string"
+						},
+						{
+							"key": "clientSecret",
+							"value": "a2148e9d-de44-465b-8f26-1b220f1c9ab5$wY8uhbFsxdBGAMp_bn4VoBBhegM0onD-paBMVoImwMA=",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "sb-bootcamp-0297f4f6trial-dev!t370357",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"Task 1\",\r\n  \"description\": \"This is the first task.\",\r\n  \"dueDate\": \"2024-12-31T23:59:59Z\",\r\n  \"project_ID\": \"1\",\r\n  \"assignee_ID\": \"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://0297f4f6trial-dev-bootcamp-srv.cfapps.us10-001.hana.ondemand.com/odata/v4/to-do/Tasks",
+					"protocol": "https",
+					"host": [
+						"0297f4f6trial-dev-bootcamp-srv",
+						"cfapps",
+						"us10-001",
+						"hana",
+						"ondemand",
+						"com"
+					],
+					"path": [
+						"odata",
+						"v4",
+						"to-do",
+						"Tasks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetTask",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessTokenUrl",
+							"value": "https://0297f4f6trial.authentication.us10.hana.ondemand.com/oauth/token",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "string"
+						},
+						{
+							"key": "tokenRequestParams",
+							"value": [
+								{
+									"key": "",
+									"value": "",
+									"enabled": false,
+									"send_as": "request_body"
+								}
+							],
+							"type": "any"
+						},
+						{
+							"key": "client_authentication",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "tokenName",
+							"value": "SAP CAP",
+							"type": "string"
+						},
+						{
+							"key": "clientSecret",
+							"value": "a2148e9d-de44-465b-8f26-1b220f1c9ab5$wY8uhbFsxdBGAMp_bn4VoBBhegM0onD-paBMVoImwMA=",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "sb-bootcamp-0297f4f6trial-dev!t370357",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://0297f4f6trial-dev-bootcamp-srv.cfapps.us10-001.hana.ondemand.com/odata/v4/to-do/Tasks(1)",
+					"protocol": "https",
+					"host": [
+						"0297f4f6trial-dev-bootcamp-srv",
+						"cfapps",
+						"us10-001",
+						"hana",
+						"ondemand",
+						"com"
+					],
+					"path": [
+						"odata",
+						"v4",
+						"to-do",
+						"Tasks(1)"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "changeTaskStatus",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessTokenUrl",
+							"value": "https://0297f4f6trial.authentication.us10.hana.ondemand.com/oauth/token",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "string"
+						},
+						{
+							"key": "tokenRequestParams",
+							"value": [
+								{
+									"key": "",
+									"value": "",
+									"enabled": false,
+									"send_as": "request_body"
+								}
+							],
+							"type": "any"
+						},
+						{
+							"key": "client_authentication",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "tokenName",
+							"value": "SAP CAP",
+							"type": "string"
+						},
+						{
+							"key": "clientSecret",
+							"value": "a2148e9d-de44-465b-8f26-1b220f1c9ab5$wY8uhbFsxdBGAMp_bn4VoBBhegM0onD-paBMVoImwMA=",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "sb-bootcamp-0297f4f6trial-dev!t370357",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"taskID\": \"1\",\r\n  \"newStatus\": \"Completed\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://0297f4f6trial-dev-bootcamp-srv.cfapps.us10-001.hana.ondemand.com/odata/v4/to-do/changeTaskStatus",
+					"protocol": "https",
+					"host": [
+						"0297f4f6trial-dev-bootcamp-srv",
+						"cfapps",
+						"us10-001",
+						"hana",
+						"ondemand",
+						"com"
+					],
+					"path": [
+						"odata",
+						"v4",
+						"to-do",
+						"changeTaskStatus"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getProjectTasks",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessTokenUrl",
+							"value": "https://0297f4f6trial.authentication.us10.hana.ondemand.com/oauth/token",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "string"
+						},
+						{
+							"key": "tokenRequestParams",
+							"value": [
+								{
+									"key": "",
+									"value": "",
+									"enabled": false,
+									"send_as": "request_body"
+								}
+							],
+							"type": "any"
+						},
+						{
+							"key": "client_authentication",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "tokenName",
+							"value": "SAP CAP",
+							"type": "string"
+						},
+						{
+							"key": "clientSecret",
+							"value": "a2148e9d-de44-465b-8f26-1b220f1c9ab5$wY8uhbFsxdBGAMp_bn4VoBBhegM0onD-paBMVoImwMA=",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "sb-bootcamp-0297f4f6trial-dev!t370357",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://0297f4f6trial-dev-bootcamp-srv.cfapps.us10-001.hana.ondemand.com/odata/v4/to-do/getProjectTasks(projectID='1')",
+					"protocol": "https",
+					"host": [
+						"0297f4f6trial-dev-bootcamp-srv",
+						"cfapps",
+						"us10-001",
+						"hana",
+						"ondemand",
+						"com"
+					],
+					"path": [
+						"odata",
+						"v4",
+						"to-do",
+						"getProjectTasks(projectID='1')"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "countTasksByStatus",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://0297f4f6trial-dev-bootcamp-srv.cfapps.us10-001.hana.ondemand.com/odata/v4/to-do/countTasksByStatus?projectID='1'&status='Pending'",
+					"protocol": "https",
+					"host": [
+						"0297f4f6trial-dev-bootcamp-srv",
+						"cfapps",
+						"us10-001",
+						"hana",
+						"ondemand",
+						"com"
+					],
+					"path": [
+						"odata",
+						"v4",
+						"to-do",
+						"countTasksByStatus"
+					],
+					"query": [
+						{
+							"key": "projectID",
+							"value": "'1'"
+						},
+						{
+							"key": "status",
+							"value": "'Pending'"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addProjectMember",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessTokenUrl",
+							"value": "https://0297f4f6trial.authentication.us10.hana.ondemand.com/oauth/token",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "string"
+						},
+						{
+							"key": "tokenRequestParams",
+							"value": [
+								{
+									"key": "",
+									"value": "",
+									"enabled": false,
+									"send_as": "request_body"
+								}
+							],
+							"type": "any"
+						},
+						{
+							"key": "client_authentication",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "tokenName",
+							"value": "SAP CAP",
+							"type": "string"
+						},
+						{
+							"key": "clientSecret",
+							"value": "a2148e9d-de44-465b-8f26-1b220f1c9ab5$wY8uhbFsxdBGAMp_bn4VoBBhegM0onD-paBMVoImwMA=",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "sb-bootcamp-0297f4f6trial-dev!t370357",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"projectID\": \"1\",\r\n  \"userID\": \"2\",\r\n  \"role\": \"Member\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://0297f4f6trial-dev-bootcamp-srv.cfapps.us10-001.hana.ondemand.com/odata/v4/to-do/addProjectMember",
+					"protocol": "https",
+					"host": [
+						"0297f4f6trial-dev-bootcamp-srv",
+						"cfapps",
+						"us10-001",
+						"hana",
+						"ondemand",
+						"com"
+					],
+					"path": [
+						"odata",
+						"v4",
+						"to-do",
+						"addProjectMember"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "assignUserToTask",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessTokenUrl",
+							"value": "https://0297f4f6trial.authentication.us10.hana.ondemand.com/oauth/token",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "string"
+						},
+						{
+							"key": "tokenRequestParams",
+							"value": [
+								{
+									"key": "",
+									"value": "",
+									"enabled": false,
+									"send_as": "request_body"
+								}
+							],
+							"type": "any"
+						},
+						{
+							"key": "client_authentication",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "tokenName",
+							"value": "SAP CAP",
+							"type": "string"
+						},
+						{
+							"key": "clientSecret",
+							"value": "a2148e9d-de44-465b-8f26-1b220f1c9ab5$wY8uhbFsxdBGAMp_bn4VoBBhegM0onD-paBMVoImwMA=",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "sb-bootcamp-0297f4f6trial-dev!t370357",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"taskID\": \"1\",\r\n  \"userID\": \"2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://0297f4f6trial-dev-bootcamp-srv.cfapps.us10-001.hana.ondemand.com/odata/v4/to-do/assignUserToTask",
+					"protocol": "https",
+					"host": [
+						"0297f4f6trial-dev-bootcamp-srv",
+						"cfapps",
+						"us10-001",
+						"hana",
+						"ondemand",
+						"com"
+					],
+					"path": [
+						"odata",
+						"v4",
+						"to-do",
+						"assignUserToTask"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "removeMemberFromProject",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessTokenUrl",
+							"value": "https://0297f4f6trial.authentication.us10.hana.ondemand.com/oauth/token",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "string"
+						},
+						{
+							"key": "tokenRequestParams",
+							"value": [
+								{
+									"key": "",
+									"value": "",
+									"enabled": false,
+									"send_as": "request_body"
+								}
+							],
+							"type": "any"
+						},
+						{
+							"key": "client_authentication",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "tokenName",
+							"value": "SAP CAP",
+							"type": "string"
+						},
+						{
+							"key": "clientSecret",
+							"value": "a2148e9d-de44-465b-8f26-1b220f1c9ab5$wY8uhbFsxdBGAMp_bn4VoBBhegM0onD-paBMVoImwMA=",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "sb-bootcamp-0297f4f6trial-dev!t370357",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"projectID\": \"1\",\r\n  \"userID\": \"2\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://0297f4f6trial-dev-bootcamp-srv.cfapps.us10-001.hana.ondemand.com/odata/v4/to-do/removeMemberFromProject",
+					"protocol": "https",
+					"host": [
+						"0297f4f6trial-dev-bootcamp-srv",
+						"cfapps",
+						"us10-001",
+						"hana",
+						"ondemand",
+						"com"
+					],
+					"path": [
+						"odata",
+						"v4",
+						"to-do",
+						"removeMemberFromProject"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "fetchUserDetails",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessTokenUrl",
+							"value": "https://0297f4f6trial.authentication.us10.hana.ondemand.com/oauth/token",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "string"
+						},
+						{
+							"key": "tokenRequestParams",
+							"value": [
+								{
+									"key": "",
+									"value": "",
+									"enabled": false,
+									"send_as": "request_body"
+								}
+							],
+							"type": "any"
+						},
+						{
+							"key": "client_authentication",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "tokenName",
+							"value": "SAP CAP",
+							"type": "string"
+						},
+						{
+							"key": "clientSecret",
+							"value": "a2148e9d-de44-465b-8f26-1b220f1c9ab5$wY8uhbFsxdBGAMp_bn4VoBBhegM0onD-paBMVoImwMA=",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "sb-bootcamp-0297f4f6trial-dev!t370357",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"sophia.clark@example.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://0297f4f6trial-dev-bootcamp-srv.cfapps.us10-001.hana.ondemand.com/odata/v4/to-do/fetchUserDetails",
+					"protocol": "https",
+					"host": [
+						"0297f4f6trial-dev-bootcamp-srv",
+						"cfapps",
+						"us10-001",
+						"hana",
+						"ondemand",
+						"com"
+					],
+					"path": [
+						"odata",
+						"v4",
+						"to-do",
+						"fetchUserDetails"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateTaskDueDate",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessTokenUrl",
+							"value": "https://0297f4f6trial.authentication.us10.hana.ondemand.com/oauth/token",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "string"
+						},
+						{
+							"key": "tokenRequestParams",
+							"value": [
+								{
+									"key": "",
+									"value": "",
+									"enabled": false,
+									"send_as": "request_body"
+								}
+							],
+							"type": "any"
+						},
+						{
+							"key": "client_authentication",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "tokenName",
+							"value": "SAP CAP",
+							"type": "string"
+						},
+						{
+							"key": "clientSecret",
+							"value": "a2148e9d-de44-465b-8f26-1b220f1c9ab5$wY8uhbFsxdBGAMp_bn4VoBBhegM0onD-paBMVoImwMA=",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "sb-bootcamp-0297f4f6trial-dev!t370357",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"taskID\": \"1\",\r\n  \"newDueDate\": \"2024-12-25T10:00:00\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://0297f4f6trial-dev-bootcamp-srv.cfapps.us10-001.hana.ondemand.com/odata/v4/to-do/updateTaskDueDate",
+					"protocol": "https",
+					"host": [
+						"0297f4f6trial-dev-bootcamp-srv",
+						"cfapps",
+						"us10-001",
+						"hana",
+						"ondemand",
+						"com"
+					],
+					"path": [
+						"odata",
+						"v4",
+						"to-do",
+						"updateTaskDueDate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addMultipleMembersToProject",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessTokenUrl",
+							"value": "https://0297f4f6trial.authentication.us10.hana.ondemand.com/oauth/token",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "string"
+						},
+						{
+							"key": "tokenRequestParams",
+							"value": [
+								{
+									"key": "",
+									"value": "",
+									"enabled": false,
+									"send_as": "request_body"
+								}
+							],
+							"type": "any"
+						},
+						{
+							"key": "client_authentication",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "tokenName",
+							"value": "SAP CAP",
+							"type": "string"
+						},
+						{
+							"key": "clientSecret",
+							"value": "a2148e9d-de44-465b-8f26-1b220f1c9ab5$wY8uhbFsxdBGAMp_bn4VoBBhegM0onD-paBMVoImwMA=",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "sb-bootcamp-0297f4f6trial-dev!t370357",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n{\r\n  \"projectID\": \"1\",\r\n  \"userIDs\": [\"2\", \"3\", \"5\", \"6\"],\r\n  \"role\": \"Member\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://0297f4f6trial-dev-bootcamp-srv.cfapps.us10-001.hana.ondemand.com/odata/v4/to-do/addMultipleMembersToProject",
+					"protocol": "https",
+					"host": [
+						"0297f4f6trial-dev-bootcamp-srv",
+						"cfapps",
+						"us10-001",
+						"hana",
+						"ondemand",
+						"com"
+					],
+					"path": [
+						"odata",
+						"v4",
+						"to-do",
+						"addMultipleMembersToProject"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "completeAllTasks",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessTokenUrl",
+							"value": "https://0297f4f6trial.authentication.us10.hana.ondemand.com/oauth/token",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "string"
+						},
+						{
+							"key": "tokenRequestParams",
+							"value": [
+								{
+									"key": "",
+									"value": "",
+									"enabled": false,
+									"send_as": "request_body"
+								}
+							],
+							"type": "any"
+						},
+						{
+							"key": "client_authentication",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "tokenName",
+							"value": "SAP CAP",
+							"type": "string"
+						},
+						{
+							"key": "clientSecret",
+							"value": "a2148e9d-de44-465b-8f26-1b220f1c9ab5$wY8uhbFsxdBGAMp_bn4VoBBhegM0onD-paBMVoImwMA=",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "sb-bootcamp-0297f4f6trial-dev!t370357",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n{\r\n  \"projectID\": \"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://0297f4f6trial-dev-bootcamp-srv.cfapps.us10-001.hana.ondemand.com/odata/v4/to-do/completeAllProjectTasks",
+					"protocol": "https",
+					"host": [
+						"0297f4f6trial-dev-bootcamp-srv",
+						"cfapps",
+						"us10-001",
+						"hana",
+						"ondemand",
+						"com"
+					],
+					"path": [
+						"odata",
+						"v4",
+						"to-do",
+						"completeAllProjectTasks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getProjectMembers",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://0297f4f6trial-dev-bootcamp-srv.cfapps.us10-001.hana.ondemand.com/odata/v4/to-do/getProjectMembers?projectID='1'",
+					"protocol": "https",
+					"host": [
+						"0297f4f6trial-dev-bootcamp-srv",
+						"cfapps",
+						"us10-001",
+						"hana",
+						"ondemand",
+						"com"
+					],
+					"path": [
+						"odata",
+						"v4",
+						"to-do",
+						"getProjectMembers"
+					],
+					"query": [
+						{
+							"key": "projectID",
+							"value": "'1'"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getTasksByPriority",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://0297f4f6trial-dev-bootcamp-srv.cfapps.us10-001.hana.ondemand.com/odata/v4/to-do/getTasksByPriority?projectID='1'&priority='High'",
+					"protocol": "https",
+					"host": [
+						"0297f4f6trial-dev-bootcamp-srv",
+						"cfapps",
+						"us10-001",
+						"hana",
+						"ondemand",
+						"com"
+					],
+					"path": [
+						"odata",
+						"v4",
+						"to-do",
+						"getTasksByPriority"
+					],
+					"query": [
+						{
+							"key": "projectID",
+							"value": "'1'"
+						},
+						{
+							"key": "priority",
+							"value": "'High'"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "calculateProjectProgress",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://0297f4f6trial-dev-bootcamp-srv.cfapps.us10-001.hana.ondemand.com/odata/v4/to-do/calculateProjectProgress?projectID='1'",
+					"protocol": "https",
+					"host": [
+						"0297f4f6trial-dev-bootcamp-srv",
+						"cfapps",
+						"us10-001",
+						"hana",
+						"ondemand",
+						"com"
+					],
+					"path": [
+						"odata",
+						"v4",
+						"to-do",
+						"calculateProjectProgress"
+					],
+					"query": [
+						{
+							"key": "projectID",
+							"value": "'1'"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "oauth2",
+		"oauth2": [
+			{
+				"key": "clientSecret",
+				"value": "{{Client Secret}}",
+				"type": "string"
+			},
+			{
+				"key": "clientId",
+				"value": "{{Client ID}}",
+				"type": "string"
+			},
+			{
+				"key": "accessTokenUrl",
+				"value": "{{Access Token UR}}",
+				"type": "string"
+			},
+			{
+				"key": "refreshRequestParams",
+				"value": [],
+				"type": "any"
+			},
+			{
+				"key": "tokenRequestParams",
+				"value": [
+					{
+						"key": "",
+						"value": "",
+						"enabled": false,
+						"send_as": "request_body"
+					}
+				],
+				"type": "any"
+			},
+			{
+				"key": "authRequestParams",
+				"value": [],
+				"type": "any"
+			},
+			{
+				"key": "tokenName",
+				"value": "SAP CAP",
+				"type": "string"
+			},
+			{
+				"key": "challengeAlgorithm",
+				"value": "S256",
+				"type": "string"
+			},
+			{
+				"key": "grant_type",
+				"value": "client_credentials",
+				"type": "string"
+			},
+			{
+				"key": "addTokenTo",
+				"value": "header",
+				"type": "string"
+			},
+			{
+				"key": "client_authentication",
+				"value": "header",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "Access Token UR",
+			"value": "https://0297f4f6trial.authentication.us10.hana.ondemand.com/oauth/token"
+		},
+		{
+			"key": "Client ID",
+			"value": "sb-bootcamp-0297f4f6trial-dev!t370357"
+		},
+		{
+			"key": "Client Secret",
+			"value": "a2148e9d-de44-465b-8f26-1b220f1c9ab5$wY8uhbFsxdBGAMp_bn4VoBBhegM0onD-paBMVoImwMA="
+		}
+	]
+}
