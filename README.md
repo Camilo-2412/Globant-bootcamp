@@ -1,6 +1,8 @@
-# Getting Started
+# Globant Bootcamp (TodoList Project)
 
-Welcome to your new project.
+This repository contains the SAP CAP project developed during the globant bootcamp. It is a simple project that was developed to demonstrate the knowledge of the SAP framework.
+
+This project consists of a task tracking application, where users can create different projects, create tasks and assign users to these tasks, the tasks have compliance status and priorities, the application allows to complete tasks, projects, delete users from projects, count number of tasks, percentage of project compliance and other more features.
 
 It contains these folders and files, following our recommended project layout:
 
