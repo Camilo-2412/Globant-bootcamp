@@ -16,7 +16,7 @@ module.exports = (srv) => {
       await srv.run(
         INSERT.into(ProjectMembers).entries({
           project_ID: projectCreated.ID,
-          user_ID: projectCreated.owner.ID, // Asegúrate de usar la asociación correctamente
+          user_ID: projectCreated.owner.ID, 
           role: "Admin",
         })
       );
