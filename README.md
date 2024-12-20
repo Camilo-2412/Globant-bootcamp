@@ -53,10 +53,10 @@ File or Folder | Purpose
       - projectHandler.js
       - tasksHandler.js
       - userHandler.js
-  - remote.cds
-  - remote.js
-  - to-do-list-service.cds
-  - to-do-list-service.js
+    - remote.cds
+    - remote.js
+    - to-do-list-service.cds
+    - to-do-list-service.js
   - mta.yaml
   - package.json
 
