@@ -171,7 +171,7 @@ module.exports = (srv) => {
       const members = await srv.run(
         SELECT.from(ProjectMembers)
           .where({ project_ID: projectID })
-          .columns('user_ID', 'role', { ref: ['user_ID'], as: 'name', from: Users, projection: ['Name'] })
+          .columns('user_ID', 'role', { ref: ['user.name'] })
       );
 
       return members;
