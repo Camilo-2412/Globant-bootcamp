@@ -72,7 +72,7 @@ The application is deployed in BTP in the following [link](https://0297f4f6trial
 On the other hand the remote service that consumes the BusinessPartner API that is hosted in the same application runs without any problem, in the following URL `https://0297f4f6trial-dev-bootcamp-srv.cfapps.us10-001.hana.ondemand.com/odata/v4/my-bupa/Foo`, you can validate the requests using a file a file with a collection within the request project in postman where the entire project request is configured including this external request that does work, the file is `Bootcamp.postman_collection.json`, I do not know if it is some configuration or a db issue that does not allow to consume the own methods of my application but the external methods are executed normally.
 
 ## Test local
-If you want to test the functionality of this project locally, several .csv files with burned data are provided in the `db/data` folder to simulate a db to test the methods. 
+If you want to test the functionality of this project locally, several .csv files with raw data are provided in the `db/data` folder to simulate a db to test the methods. 
 Once you have downloaded or cloned this repo follow the next steps to test the app (preferably from BAS):
 1. `npm install` install all the dependencies
 2. `cds deploy` display the values in the csv files in an in-memory sqlite database.
