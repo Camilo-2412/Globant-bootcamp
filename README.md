@@ -41,24 +41,24 @@ File or Folder | Purpose
 `package.json` | project metadata and configuration
 `readme.md` | this getting started guide
 
--bootcamp
-  -db 
-    -schema.cds
-    -schemaRemote.cds
-  -srv
-    -external
-      -API_BUSINESS_PARTNER.cds
-      -API_BUSINESS_PARTNER.edmx
-    -handlers
-      -projectHandler.js
-      -tasksHandler.js
-      -userHandler.js
-  -remote.cds
-  -remote.js
-  -to-do-list-service.cds
-  -to-do-list-service.js
-  -mta.yaml
-  -package.json
+- bootcamp
+  - db 
+    - schema.cds
+    - schemaRemote.cds
+  - srv
+    - external
+      - API_BUSINESS_PARTNER.cds
+      - API_BUSINESS_PARTNER.edmx
+    - handlers
+      - projectHandler.js
+      - tasksHandler.js
+      - userHandler.js
+  - remote.cds
+  - remote.js
+  - to-do-list-service.cds
+  - to-do-list-service.js
+  - mta.yaml
+  - package.json
 
 
 ## Next Steps
