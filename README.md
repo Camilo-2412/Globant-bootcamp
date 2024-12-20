@@ -60,7 +60,11 @@ File or Folder | Purpose
   - mta.yaml
   - package.json
 
+In the `db` folder are the models of the application `schema.cds` are the own models, and `schemaRemote.cds` is the model of the external service that is consumed from BusinessPartner, it is defined only the fields that are desired. In the `srv`folder there are the services and application logic, inside this folder there is the external folder in which there are two files the `API_BUSINESS_PARTNER.cds` and the `API_BUSINESS_PARTNER.edmx`, the cds file defines the entire model of the external service that is to be consumed.
 
+In the `handlers` folder there is the separate logic for each of the entities, where filters, searches and other functionalities are developed.There are also the files that expose the services that in this case are `to-do-list-service.cds` and for the external service `remote.cds`, and the support files `to-do-list-service.j`s and `remote.js`.
+
+Finally, there are the property and configuration files that allow or facilitate the deployment to BTP, such as `mta.yaml` and `package.json`.
 ## Next Steps
 
 - Open a new terminal and run `cds watch`
